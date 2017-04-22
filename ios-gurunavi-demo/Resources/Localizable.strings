@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  ios-gurunavi-demo
+
+  Created by Eiji Kushida on 2017/04/22.
+  Copyright © 2017年 Eiji Kushida. All rights reserved.
+*/
+
+/// レストランの検索エリア
+"REST_TITLE" = "%@の飲食店";
+
+/// レストランの検索エリア ヒット件数
+"REST_COUNT" = "%@の飲食店 %@件";
+
+/// 駅からの徒歩でかかる時間
+"WALK_TIME" = "%@ %@分";

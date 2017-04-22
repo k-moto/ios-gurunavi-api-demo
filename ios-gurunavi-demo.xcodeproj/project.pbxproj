@@ -1,0 +1,775 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F3FADD2DF474F454FA27BC9 /* Pods_ios_gurunavi_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744400E1457275DFC2311254 /* Pods_ios_gurunavi_demo.framework */; };
+		BC0D384C1EAB161C00B19569 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC0D384B1EAB161C00B19569 /* Localizable.strings */; };
+		BC5213401EAB1D390084C283 /* SpyAreaFilterLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC52133F1EAB1D390084C283 /* SpyAreaFilterLoadable.swift */; };
+		BCBE77E11E7CBD4B008C39AA /* RestSearchParamsBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBE77E01E7CBD4B008C39AA /* RestSearchParamsBuilderTests.swift */; };
+		BCBE77E41E7CBF7A008C39AA /* SpyRestSearchAPILoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBE77E31E7CBF7A008C39AA /* SpyRestSearchAPILoadable.swift */; };
+		BCBE77E61E7CBFEA008C39AA /* RestSearchAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBE77E51E7CBFEA008C39AA /* RestSearchAPITests.swift */; };
+		BCBE77E81E7CC42C008C39AA /* AreaFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBE77E71E7CC42C008C39AA /* AreaFilterTests.swift */; };
+		BCE16FBE1E83655800F5EC07 /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE16FBD1E83655800F5EC07 /* Env.swift */; };
+		BCF2241F1E7B9D9A003C6C1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2241E1E7B9D9A003C6C1B /* AppDelegate.swift */; };
+		BCF224211E7B9D9A003C6C1B /* AreaListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF224201E7B9D9A003C6C1B /* AreaListViewController.swift */; };
+		BCF224241E7B9D9A003C6C1B /* AreaListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF224221E7B9D9A003C6C1B /* AreaListViewController.storyboard */; };
+		BCF224261E7B9D9A003C6C1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCF224251E7B9D9A003C6C1B /* Assets.xcassets */; };
+		BCF224291E7B9D9A003C6C1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF224271E7B9D9A003C6C1B /* LaunchScreen.storyboard */; };
+		BCF2243F1E7B9DAD003C6C1B /* area.json in Resources */ = {isa = PBXBuildFile; fileRef = BCF2243E1E7B9DAD003C6C1B /* area.json */; };
+		BCF224451E7BA1B1003C6C1B /* GAreaLarge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF224441E7BA1B1003C6C1B /* GAreaLarge.swift */; };
+		BCF224481E7BB578003C6C1B /* AreaFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF224471E7BB578003C6C1B /* AreaFilter.swift */; };
+		BCF2244B1E7BB65B003C6C1B /* AreaTableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2244A1E7BB65B003C6C1B /* AreaTableViewProvider.swift */; };
+		BCF224501E7BB8AF003C6C1B /* RestListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2244F1E7BB8AF003C6C1B /* RestListViewController.swift */; };
+		BCF224521E7BB8BB003C6C1B /* RestListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF224511E7BB8BB003C6C1B /* RestListViewController.storyboard */; };
+		BCF224551E7BB9A5003C6C1B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF224541E7BB9A5003C6C1B /* Router.swift */; };
+		BCF224571E7BBA0B003C6C1B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF224561E7BBA0B003C6C1B /* APIClient.swift */; };
+		BCF224591E7BBA37003C6C1B /* RestSearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF224581E7BBA37003C6C1B /* RestSearchAPI.swift */; };
+		BCF2245D1E7BBB0E003C6C1B /* RestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2245C1E7BBB0E003C6C1B /* RestResponse.swift */; };
+		BCF2245F1E7BBE7D003C6C1B /* RestSearchParamsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2245E1E7BBE7C003C6C1B /* RestSearchParamsBuilder.swift */; };
+		BCF224611E7BC7C9003C6C1B /* RestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF224601E7BC7C9003C6C1B /* RestTableViewCell.swift */; };
+		BCF224651E7BC92F003C6C1B /* RestTableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF224641E7BC92F003C6C1B /* RestTableViewProvider.swift */; };
+		BCF224691E7BD7FC003C6C1B /* RestPageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF224681E7BD7FC003C6C1B /* RestPageManager.swift */; };
+		BCF2246B1E7BDAA8003C6C1B /* RestTableFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2246A1E7BDAA8003C6C1B /* RestTableFooter.swift */; };
+		BCF224721E7CAD8E003C6C1B /* RestPageManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF224711E7CAD8E003C6C1B /* RestPageManagerTests.swift */; };
+		FB800C5BA2C5C599C28C4C6F /* Pods_ios_gurunavi_demoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C26F9DF50424E98E200ED53 /* Pods_ios_gurunavi_demoTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCF224301E7B9D9B003C6C1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCF224131E7B9D9A003C6C1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCF2241A1E7B9D9A003C6C1B;
+			remoteInfo = "ios-gurunavi-demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		397D862FCE48AC217143E3F3 /* Pods-ios-gurunavi-demoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-gurunavi-demoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-gurunavi-demoTests/Pods-ios-gurunavi-demoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C26F9DF50424E98E200ED53 /* Pods_ios_gurunavi_demoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_gurunavi_demoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6189ED59229643610CFB1430 /* Pods-ios-gurunavi-demoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-gurunavi-demoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-gurunavi-demoTests/Pods-ios-gurunavi-demoTests.release.xcconfig"; sourceTree = "<group>"; };
+		744400E1457275DFC2311254 /* Pods_ios_gurunavi_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_gurunavi_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1A76292B333930A7CCB6B0C /* Pods-ios-gurunavi-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-gurunavi-demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-gurunavi-demo/Pods-ios-gurunavi-demo.release.xcconfig"; sourceTree = "<group>"; };
+		BC0D384B1EAB161C00B19569 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		BC52133F1EAB1D390084C283 /* SpyAreaFilterLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyAreaFilterLoadable.swift; sourceTree = "<group>"; };
+		BCBE77E01E7CBD4B008C39AA /* RestSearchParamsBuilderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestSearchParamsBuilderTests.swift; sourceTree = "<group>"; };
+		BCBE77E31E7CBF7A008C39AA /* SpyRestSearchAPILoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyRestSearchAPILoadable.swift; sourceTree = "<group>"; };
+		BCBE77E51E7CBFEA008C39AA /* RestSearchAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestSearchAPITests.swift; sourceTree = "<group>"; };
+		BCBE77E71E7CC42C008C39AA /* AreaFilterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaFilterTests.swift; sourceTree = "<group>"; };
+		BCE16FBD1E83655800F5EC07 /* Env.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Env.swift; sourceTree = "<group>"; };
+		BCF2241B1E7B9D9A003C6C1B /* ios-gurunavi-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-gurunavi-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCF2241E1E7B9D9A003C6C1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BCF224201E7B9D9A003C6C1B /* AreaListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListViewController.swift; sourceTree = "<group>"; };
+		BCF224231E7B9D9A003C6C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AreaListViewController.storyboard; sourceTree = "<group>"; };
+		BCF224251E7B9D9A003C6C1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCF224281E7B9D9A003C6C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCF2242A1E7B9D9A003C6C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCF2242F1E7B9D9B003C6C1B /* ios-gurunavi-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-gurunavi-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCF224351E7B9D9B003C6C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCF2243E1E7B9DAD003C6C1B /* area.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = area.json; sourceTree = "<group>"; };
+		BCF224441E7BA1B1003C6C1B /* GAreaLarge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GAreaLarge.swift; sourceTree = "<group>"; };
+		BCF224471E7BB578003C6C1B /* AreaFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaFilter.swift; sourceTree = "<group>"; };
+		BCF2244A1E7BB65B003C6C1B /* AreaTableViewProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaTableViewProvider.swift; sourceTree = "<group>"; };
+		BCF2244F1E7BB8AF003C6C1B /* RestListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestListViewController.swift; sourceTree = "<group>"; };
+		BCF224511E7BB8BB003C6C1B /* RestListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RestListViewController.storyboard; sourceTree = "<group>"; };
+		BCF224541E7BB9A5003C6C1B /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		BCF224561E7BBA0B003C6C1B /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		BCF224581E7BBA37003C6C1B /* RestSearchAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestSearchAPI.swift; sourceTree = "<group>"; };
+		BCF2245C1E7BBB0E003C6C1B /* RestResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestResponse.swift; sourceTree = "<group>"; };
+		BCF2245E1E7BBE7C003C6C1B /* RestSearchParamsBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestSearchParamsBuilder.swift; sourceTree = "<group>"; };
+		BCF224601E7BC7C9003C6C1B /* RestTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestTableViewCell.swift; sourceTree = "<group>"; };
+		BCF224641E7BC92F003C6C1B /* RestTableViewProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestTableViewProvider.swift; sourceTree = "<group>"; };
+		BCF224681E7BD7FC003C6C1B /* RestPageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestPageManager.swift; sourceTree = "<group>"; };
+		BCF2246A1E7BDAA8003C6C1B /* RestTableFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestTableFooter.swift; sourceTree = "<group>"; };
+		BCF224711E7CAD8E003C6C1B /* RestPageManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestPageManagerTests.swift; sourceTree = "<group>"; };
+		F38755BC5F0892C09B7862FF /* Pods-ios-gurunavi-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-gurunavi-demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-gurunavi-demo/Pods-ios-gurunavi-demo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCF224181E7B9D9A003C6C1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F3FADD2DF474F454FA27BC9 /* Pods_ios_gurunavi_demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF2242C1E7B9D9B003C6C1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB800C5BA2C5C599C28C4C6F /* Pods_ios_gurunavi_demoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		257B89C0AA49A233400D000A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F38755BC5F0892C09B7862FF /* Pods-ios-gurunavi-demo.debug.xcconfig */,
+				B1A76292B333930A7CCB6B0C /* Pods-ios-gurunavi-demo.release.xcconfig */,
+				397D862FCE48AC217143E3F3 /* Pods-ios-gurunavi-demoTests.debug.xcconfig */,
+				6189ED59229643610CFB1430 /* Pods-ios-gurunavi-demoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8337EF9B167C17BC6FA91914 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				744400E1457275DFC2311254 /* Pods_ios_gurunavi_demo.framework */,
+				4C26F9DF50424E98E200ED53 /* Pods_ios_gurunavi_demoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCBE77E21E7CBF5C008C39AA /* Moc */ = {
+			isa = PBXGroup;
+			children = (
+				BC52133F1EAB1D390084C283 /* SpyAreaFilterLoadable.swift */,
+				BCBE77E31E7CBF7A008C39AA /* SpyRestSearchAPILoadable.swift */,
+			);
+			name = Moc;
+			path = Moc;
+			sourceTree = "<group>";
+		};
+		BCF224121E7B9D9A003C6C1B = {
+			isa = PBXGroup;
+			children = (
+				8337EF9B167C17BC6FA91914 /* Frameworks */,
+				257B89C0AA49A233400D000A /* Pods */,
+				BCF2241C1E7B9D9A003C6C1B /* Products */,
+				BCF2241D1E7B9D9A003C6C1B /* ios-gurunavi-demo */,
+				BCF224321E7B9D9B003C6C1B /* ios-gurunavi-demoTests */,
+			);
+			sourceTree = "<group>";
+		};
+		BCF2241C1E7B9D9A003C6C1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCF2241B1E7B9D9A003C6C1B /* ios-gurunavi-demo.app */,
+				BCF2242F1E7B9D9B003C6C1B /* ios-gurunavi-demoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCF2241D1E7B9D9A003C6C1B /* ios-gurunavi-demo */ = {
+			isa = PBXGroup;
+			children = (
+				BCF224491E7BB63A003C6C1B /* Controllers */,
+				BCF224461E7BA213003C6C1B /* Models */,
+				BCF2244D1E7BB82C003C6C1B /* Resources */,
+				BCF224531E7BB988003C6C1B /* Utils */,
+				BCF2244C1E7BB820003C6C1B /* Views */,
+				BCF2241E1E7B9D9A003C6C1B /* AppDelegate.swift */,
+				BCF2242A1E7B9D9A003C6C1B /* Info.plist */,
+				BCF224271E7B9D9A003C6C1B /* LaunchScreen.storyboard */,
+			);
+			path = "ios-gurunavi-demo";
+			sourceTree = "<group>";
+		};
+		BCF224321E7B9D9B003C6C1B /* ios-gurunavi-demoTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCBE77E21E7CBF5C008C39AA /* Moc */,
+				BCF224701E7CAD63003C6C1B /* Models */,
+				BCF224351E7B9D9B003C6C1B /* Info.plist */,
+			);
+			path = "ios-gurunavi-demoTests";
+			sourceTree = "<group>";
+		};
+		BCF224461E7BA213003C6C1B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BCF2245A1E7BBAF3003C6C1B /* Area */,
+				BCF2245B1E7BBAFA003C6C1B /* Rest */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BCF224491E7BB63A003C6C1B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BCF2246C1E7C1DC5003C6C1B /* Area */,
+				BCF2246D1E7C1DCE003C6C1B /* Rest */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BCF2244C1E7BB820003C6C1B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BCF224631E7BC914003C6C1B /* Area */,
+				BCF224621E7BC90D003C6C1B /* Rest */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BCF2244D1E7BB82C003C6C1B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BCF224251E7B9D9A003C6C1B /* Assets.xcassets */,
+				BCE16FBD1E83655800F5EC07 /* Env.swift */,
+				BC0D384B1EAB161C00B19569 /* Localizable.strings */,
+				BCF2243E1E7B9DAD003C6C1B /* area.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BCF224531E7BB988003C6C1B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BCF224561E7BBA0B003C6C1B /* APIClient.swift */,
+				BCF224541E7BB9A5003C6C1B /* Router.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BCF2245A1E7BBAF3003C6C1B /* Area */ = {
+			isa = PBXGroup;
+			children = (
+				BCF224471E7BB578003C6C1B /* AreaFilter.swift */,
+				BCF224441E7BA1B1003C6C1B /* GAreaLarge.swift */,
+			);
+			path = Area;
+			sourceTree = "<group>";
+		};
+		BCF2245B1E7BBAFA003C6C1B /* Rest */ = {
+			isa = PBXGroup;
+			children = (
+				BCF224681E7BD7FC003C6C1B /* RestPageManager.swift */,
+				BCF2245C1E7BBB0E003C6C1B /* RestResponse.swift */,
+				BCF224581E7BBA37003C6C1B /* RestSearchAPI.swift */,
+				BCF2245E1E7BBE7C003C6C1B /* RestSearchParamsBuilder.swift */,
+			);
+			path = Rest;
+			sourceTree = "<group>";
+		};
+		BCF224621E7BC90D003C6C1B /* Rest */ = {
+			isa = PBXGroup;
+			children = (
+				BCF2246A1E7BDAA8003C6C1B /* RestTableFooter.swift */,
+				BCF224601E7BC7C9003C6C1B /* RestTableViewCell.swift */,
+				BCF224641E7BC92F003C6C1B /* RestTableViewProvider.swift */,
+			);
+			path = Rest;
+			sourceTree = "<group>";
+		};
+		BCF224631E7BC914003C6C1B /* Area */ = {
+			isa = PBXGroup;
+			children = (
+				BCF2244A1E7BB65B003C6C1B /* AreaTableViewProvider.swift */,
+			);
+			path = Area;
+			sourceTree = "<group>";
+		};
+		BCF2246C1E7C1DC5003C6C1B /* Area */ = {
+			isa = PBXGroup;
+			children = (
+				BCF224221E7B9D9A003C6C1B /* AreaListViewController.storyboard */,
+				BCF224201E7B9D9A003C6C1B /* AreaListViewController.swift */,
+			);
+			name = Area;
+			path = Area;
+			sourceTree = "<group>";
+		};
+		BCF2246D1E7C1DCE003C6C1B /* Rest */ = {
+			isa = PBXGroup;
+			children = (
+				BCF224511E7BB8BB003C6C1B /* RestListViewController.storyboard */,
+				BCF2244F1E7BB8AF003C6C1B /* RestListViewController.swift */,
+			);
+			name = Rest;
+			path = Rest;
+			sourceTree = "<group>";
+		};
+		BCF224701E7CAD63003C6C1B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BCBE77E71E7CC42C008C39AA /* AreaFilterTests.swift */,
+				BCF224711E7CAD8E003C6C1B /* RestPageManagerTests.swift */,
+				BCBE77E51E7CBFEA008C39AA /* RestSearchAPITests.swift */,
+				BCBE77E01E7CBD4B008C39AA /* RestSearchParamsBuilderTests.swift */,
+			);
+			name = Models;
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCF2241A1E7B9D9A003C6C1B /* ios-gurunavi-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCF224381E7B9D9B003C6C1B /* Build configuration list for PBXNativeTarget "ios-gurunavi-demo" */;
+			buildPhases = (
+				7E15F117149479D5016A7C59 /* [CP] Check Pods Manifest.lock */,
+				BCF224171E7B9D9A003C6C1B /* Sources */,
+				BCF224181E7B9D9A003C6C1B /* Frameworks */,
+				BCF224191E7B9D9A003C6C1B /* Resources */,
+				C8FA5AD4B5ADCC694229D291 /* [CP] Embed Pods Frameworks */,
+				B94EAE7FDCCC00CAD9D2762B /* [CP] Copy Pods Resources */,
+				BC7E3BE01E9CC1C100BF4D48 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-gurunavi-demo";
+			productName = "ios-gurunavi-demo";
+			productReference = BCF2241B1E7B9D9A003C6C1B /* ios-gurunavi-demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCF2242E1E7B9D9B003C6C1B /* ios-gurunavi-demoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCF2243B1E7B9D9B003C6C1B /* Build configuration list for PBXNativeTarget "ios-gurunavi-demoTests" */;
+			buildPhases = (
+				D4ECA745413F25821FBD0BDD /* [CP] Check Pods Manifest.lock */,
+				BCF2242B1E7B9D9B003C6C1B /* Sources */,
+				BCF2242C1E7B9D9B003C6C1B /* Frameworks */,
+				BCF2242D1E7B9D9B003C6C1B /* Resources */,
+				408EA9780C45C3BDABB8060B /* [CP] Embed Pods Frameworks */,
+				0F1FE5545C51B0EBF5297B42 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCF224311E7B9D9B003C6C1B /* PBXTargetDependency */,
+			);
+			name = "ios-gurunavi-demoTests";
+			productName = "ios-gurunavi-demoTests";
+			productReference = BCF2242F1E7B9D9B003C6C1B /* ios-gurunavi-demoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCF224131E7B9D9A003C6C1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Eiji Kushida";
+				TargetAttributes = {
+					BCF2241A1E7B9D9A003C6C1B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PCCZJUYRT6;
+						ProvisioningStyle = Automatic;
+					};
+					BCF2242E1E7B9D9B003C6C1B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BCF2241A1E7B9D9A003C6C1B;
+					};
+				};
+			};
+			buildConfigurationList = BCF224161E7B9D9A003C6C1B /* Build configuration list for PBXProject "ios-gurunavi-demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCF224121E7B9D9A003C6C1B;
+			productRefGroup = BCF2241C1E7B9D9A003C6C1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCF2241A1E7B9D9A003C6C1B /* ios-gurunavi-demo */,
+				BCF2242E1E7B9D9B003C6C1B /* ios-gurunavi-demoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCF224191E7B9D9A003C6C1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF224291E7B9D9A003C6C1B /* LaunchScreen.storyboard in Resources */,
+				BC0D384C1EAB161C00B19569 /* Localizable.strings in Resources */,
+				BCF224261E7B9D9A003C6C1B /* Assets.xcassets in Resources */,
+				BCF2243F1E7B9DAD003C6C1B /* area.json in Resources */,
+				BCF224241E7B9D9A003C6C1B /* AreaListViewController.storyboard in Resources */,
+				BCF224521E7BB8BB003C6C1B /* RestListViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF2242D1E7B9D9B003C6C1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F1FE5545C51B0EBF5297B42 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-gurunavi-demoTests/Pods-ios-gurunavi-demoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		408EA9780C45C3BDABB8060B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-gurunavi-demoTests/Pods-ios-gurunavi-demoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E15F117149479D5016A7C59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B94EAE7FDCCC00CAD9D2762B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-gurunavi-demo/Pods-ios-gurunavi-demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC7E3BE01E9CC1C100BF4D48 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		C8FA5AD4B5ADCC694229D291 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-gurunavi-demo/Pods-ios-gurunavi-demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4ECA745413F25821FBD0BDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCF224171E7B9D9A003C6C1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF224551E7BB9A5003C6C1B /* Router.swift in Sources */,
+				BCF224501E7BB8AF003C6C1B /* RestListViewController.swift in Sources */,
+				BCF2245F1E7BBE7D003C6C1B /* RestSearchParamsBuilder.swift in Sources */,
+				BCF224211E7B9D9A003C6C1B /* AreaListViewController.swift in Sources */,
+				BCF224591E7BBA37003C6C1B /* RestSearchAPI.swift in Sources */,
+				BCF224691E7BD7FC003C6C1B /* RestPageManager.swift in Sources */,
+				BCF224451E7BA1B1003C6C1B /* GAreaLarge.swift in Sources */,
+				BCF224611E7BC7C9003C6C1B /* RestTableViewCell.swift in Sources */,
+				BCF2245D1E7BBB0E003C6C1B /* RestResponse.swift in Sources */,
+				BCF2241F1E7B9D9A003C6C1B /* AppDelegate.swift in Sources */,
+				BCF2246B1E7BDAA8003C6C1B /* RestTableFooter.swift in Sources */,
+				BCF224481E7BB578003C6C1B /* AreaFilter.swift in Sources */,
+				BCF2244B1E7BB65B003C6C1B /* AreaTableViewProvider.swift in Sources */,
+				BCE16FBE1E83655800F5EC07 /* Env.swift in Sources */,
+				BCF224571E7BBA0B003C6C1B /* APIClient.swift in Sources */,
+				BCF224651E7BC92F003C6C1B /* RestTableViewProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF2242B1E7B9D9B003C6C1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCBE77E61E7CBFEA008C39AA /* RestSearchAPITests.swift in Sources */,
+				BC5213401EAB1D390084C283 /* SpyAreaFilterLoadable.swift in Sources */,
+				BCF224721E7CAD8E003C6C1B /* RestPageManagerTests.swift in Sources */,
+				BCBE77E41E7CBF7A008C39AA /* SpyRestSearchAPILoadable.swift in Sources */,
+				BCBE77E11E7CBD4B008C39AA /* RestSearchParamsBuilderTests.swift in Sources */,
+				BCBE77E81E7CC42C008C39AA /* AreaFilterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCF224311E7B9D9B003C6C1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCF2241A1E7B9D9A003C6C1B /* ios-gurunavi-demo */;
+			targetProxy = BCF224301E7B9D9B003C6C1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCF224221E7B9D9A003C6C1B /* AreaListViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCF224231E7B9D9A003C6C1B /* Base */,
+			);
+			name = AreaListViewController.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		BCF224271E7B9D9A003C6C1B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCF224281E7B9D9A003C6C1B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCF224361E7B9D9B003C6C1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BCF224371E7B9D9B003C6C1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCF224391E7B9D9B003C6C1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F38755BC5F0892C09B7862FF /* Pods-ios-gurunavi-demo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PCCZJUYRT6;
+				INFOPLIST_FILE = "ios-gurunavi-demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-gurunavi-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BCF2243A1E7B9D9B003C6C1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1A76292B333930A7CCB6B0C /* Pods-ios-gurunavi-demo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PCCZJUYRT6;
+				INFOPLIST_FILE = "ios-gurunavi-demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-gurunavi-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BCF2243C1E7B9D9B003C6C1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 397D862FCE48AC217143E3F3 /* Pods-ios-gurunavi-demoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "ios-gurunavi-demoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-gurunavi-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-gurunavi-demo.app/ios-gurunavi-demo";
+			};
+			name = Debug;
+		};
+		BCF2243D1E7B9D9B003C6C1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6189ED59229643610CFB1430 /* Pods-ios-gurunavi-demoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "ios-gurunavi-demoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-gurunavi-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-gurunavi-demo.app/ios-gurunavi-demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCF224161E7B9D9A003C6C1B /* Build configuration list for PBXProject "ios-gurunavi-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCF224361E7B9D9B003C6C1B /* Debug */,
+				BCF224371E7B9D9B003C6C1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCF224381E7B9D9B003C6C1B /* Build configuration list for PBXNativeTarget "ios-gurunavi-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCF224391E7B9D9B003C6C1B /* Debug */,
+				BCF2243A1E7B9D9B003C6C1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCF2243B1E7B9D9B003C6C1B /* Build configuration list for PBXNativeTarget "ios-gurunavi-demoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCF2243C1E7B9D9B003C6C1B /* Debug */,
+				BCF2243D1E7B9D9B003C6C1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCF224131E7B9D9A003C6C1B /* Project object */;
+}

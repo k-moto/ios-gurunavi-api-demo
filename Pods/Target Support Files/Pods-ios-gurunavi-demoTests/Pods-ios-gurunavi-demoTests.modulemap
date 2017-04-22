@@ -1,0 +1,6 @@
+framework module Pods_ios_gurunavi_demoTests {
+  umbrella header "Pods-ios-gurunavi-demoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
