@@ -4,7 +4,7 @@
 use_frameworks!
 
 target 'ios-gurunavi-demo' do
-pod 'ObjectMapper', '2.2'
+pod 'ObjectMapper', '2.2.1'
 pod 'STV-Extensions', '0.1.9'
 pod 'Alamofire', '4.2'
 pod 'Kingfisher', '3.5.1'
@@ -12,7 +12,7 @@ pod 'Kingfisher', '3.5.1'
 end
 
 target 'ios-gurunavi-demoTests' do
-pod 'ObjectMapper', '2.2'
+pod 'ObjectMapper', '2.2.1'
 end
 
 plugin 'cocoapods-keys', {
