@@ -11,7 +11,7 @@ import UIKit
 
 final class RestListViewController: UIViewController {
     
-    @IBOutlet fileprivate weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet fileprivate weak var indicatorView: UIActivityIndicatorView!
     @IBOutlet var continueFooter: RestTableFooter!
     fileprivate let api = RestSearchAPI()

@@ -85,7 +85,9 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Keys-iOS10.2/Keys.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ObjectMapper-iOS10.2/ObjectMapper.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Keys-iOS10.2/Keys.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ObjectMapper-iOS10.2/ObjectMapper.framework"
 fi

@@ -10,7 +10,7 @@ import UIKit
 
 final class AreaListViewController: UIViewController {
     
-    @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     fileprivate let provider = AreaTableViewProvider()
     private let prefName = "東京都"
     private let areaFilter = AreaFilter()
