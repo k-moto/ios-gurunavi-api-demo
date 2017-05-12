@@ -14,6 +14,7 @@
 		BCBE77E41E7CBF7A008C39AA /* SpyRestSearchAPILoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBE77E31E7CBF7A008C39AA /* SpyRestSearchAPILoadable.swift */; };
 		BCBE77E61E7CBFEA008C39AA /* RestSearchAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBE77E51E7CBFEA008C39AA /* RestSearchAPITests.swift */; };
 		BCBE77E81E7CC42C008C39AA /* AreaFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBE77E71E7CC42C008C39AA /* AreaFilterTests.swift */; };
+		BCD7715D1EC5994500993F15 /* RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD7715C1EC5994500993F15 /* RouterTests.swift */; };
 		BCE16FBE1E83655800F5EC07 /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE16FBD1E83655800F5EC07 /* Env.swift */; };
 		BCF2241F1E7B9D9A003C6C1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2241E1E7B9D9A003C6C1B /* AppDelegate.swift */; };
 		BCF224211E7B9D9A003C6C1B /* AreaListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF224201E7B9D9A003C6C1B /* AreaListViewController.swift */; };
@@ -61,6 +62,7 @@
 		BCBE77E31E7CBF7A008C39AA /* SpyRestSearchAPILoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyRestSearchAPILoadable.swift; sourceTree = "<group>"; };
 		BCBE77E51E7CBFEA008C39AA /* RestSearchAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestSearchAPITests.swift; sourceTree = "<group>"; };
 		BCBE77E71E7CC42C008C39AA /* AreaFilterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaFilterTests.swift; sourceTree = "<group>"; };
+		BCD7715C1EC5994500993F15 /* RouterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterTests.swift; sourceTree = "<group>"; };
 		BCE16FBD1E83655800F5EC07 /* Env.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Env.swift; sourceTree = "<group>"; };
 		BCF2241B1E7B9D9A003C6C1B /* ios-gurunavi-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-gurunavi-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF2241E1E7B9D9A003C6C1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -136,8 +138,15 @@
 				BC52133F1EAB1D390084C283 /* SpyAreaFilterLoadable.swift */,
 				BCBE77E31E7CBF7A008C39AA /* SpyRestSearchAPILoadable.swift */,
 			);
-			name = Moc;
 			path = Moc;
+			sourceTree = "<group>";
+		};
+		BCD7715B1EC5993000993F15 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BCD7715C1EC5994500993F15 /* RouterTests.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 		BCF224121E7B9D9A003C6C1B = {
@@ -178,9 +187,10 @@
 		BCF224321E7B9D9B003C6C1B /* ios-gurunavi-demoTests */ = {
 			isa = PBXGroup;
 			children = (
+				BCF224351E7B9D9B003C6C1B /* Info.plist */,
 				BCBE77E21E7CBF5C008C39AA /* Moc */,
 				BCF224701E7CAD63003C6C1B /* Models */,
-				BCF224351E7B9D9B003C6C1B /* Info.plist */,
+				BCD7715B1EC5993000993F15 /* Utils */,
 			);
 			path = "ios-gurunavi-demoTests";
 			sourceTree = "<group>";
@@ -276,7 +286,6 @@
 				BCF224221E7B9D9A003C6C1B /* AreaListViewController.storyboard */,
 				BCF224201E7B9D9A003C6C1B /* AreaListViewController.swift */,
 			);
-			name = Area;
 			path = Area;
 			sourceTree = "<group>";
 		};
@@ -286,7 +295,6 @@
 				BCF224511E7BB8BB003C6C1B /* RestListViewController.storyboard */,
 				BCF2244F1E7BB8AF003C6C1B /* RestListViewController.swift */,
 			);
-			name = Rest;
 			path = Rest;
 			sourceTree = "<group>";
 		};
@@ -298,7 +306,6 @@
 				BCBE77E51E7CBFEA008C39AA /* RestSearchAPITests.swift */,
 				BCBE77E01E7CBD4B008C39AA /* RestSearchParamsBuilderTests.swift */,
 			);
-			name = Models;
 			path = Models;
 			sourceTree = "<group>";
 		};
@@ -550,6 +557,7 @@
 				BCF224721E7CAD8E003C6C1B /* RestPageManagerTests.swift in Sources */,
 				BCBE77E41E7CBF7A008C39AA /* SpyRestSearchAPILoadable.swift in Sources */,
 				BCBE77E11E7CBD4B008C39AA /* RestSearchParamsBuilderTests.swift in Sources */,
+				BCD7715D1EC5994500993F15 /* RouterTests.swift in Sources */,
 				BCBE77E81E7CC42C008C39AA /* AreaFilterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
