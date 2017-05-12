@@ -12,7 +12,7 @@ pod 'Kingfisher', '3.5.1'
 end
 
 target 'ios-gurunavi-demoTests' do
-
+pod 'ObjectMapper', '2.2'
 end
 
 plugin 'cocoapods-keys', {

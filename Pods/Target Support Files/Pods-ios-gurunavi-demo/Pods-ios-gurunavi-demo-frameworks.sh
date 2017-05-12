@@ -87,13 +87,13 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Keys-iOS10.0/Keys.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Kingfisher/Kingfisher.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/ObjectMapper/ObjectMapper.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ObjectMapper-iOS10.0/ObjectMapper.framework"
   install_framework "$BUILT_PRODUCTS_DIR/STV-Extensions/STV_Extensions.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Keys-iOS10.0/Keys.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Kingfisher/Kingfisher.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/ObjectMapper/ObjectMapper.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ObjectMapper-iOS10.0/ObjectMapper.framework"
   install_framework "$BUILT_PRODUCTS_DIR/STV-Extensions/STV_Extensions.framework"
 fi

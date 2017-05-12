@@ -15,6 +15,10 @@
 		BCBE77E61E7CBFEA008C39AA /* RestSearchAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBE77E51E7CBFEA008C39AA /* RestSearchAPITests.swift */; };
 		BCBE77E81E7CC42C008C39AA /* AreaFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBE77E71E7CC42C008C39AA /* AreaFilterTests.swift */; };
 		BCD7715D1EC5994500993F15 /* RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD7715C1EC5994500993F15 /* RouterTests.swift */; };
+		BCD771601EC5A12E00993F15 /* AreaTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD7715F1EC5A12E00993F15 /* AreaTableViewCellTests.swift */; };
+		BCD771621EC5A40200993F15 /* RestTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD771611EC5A40200993F15 /* RestTableViewCellTests.swift */; };
+		BCD7716B1EC5AD9100993F15 /* MocRestList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD7716A1EC5AD9100993F15 /* MocRestList.swift */; };
+		BCD7716D1EC5AE4000993F15 /* rest.json in Resources */ = {isa = PBXBuildFile; fileRef = BCD7716C1EC5AE4000993F15 /* rest.json */; };
 		BCE16FBE1E83655800F5EC07 /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE16FBD1E83655800F5EC07 /* Env.swift */; };
 		BCF2241F1E7B9D9A003C6C1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2241E1E7B9D9A003C6C1B /* AppDelegate.swift */; };
 		BCF224211E7B9D9A003C6C1B /* AreaListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF224201E7B9D9A003C6C1B /* AreaListViewController.swift */; };
@@ -63,6 +67,10 @@
 		BCBE77E51E7CBFEA008C39AA /* RestSearchAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestSearchAPITests.swift; sourceTree = "<group>"; };
 		BCBE77E71E7CC42C008C39AA /* AreaFilterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaFilterTests.swift; sourceTree = "<group>"; };
 		BCD7715C1EC5994500993F15 /* RouterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterTests.swift; sourceTree = "<group>"; };
+		BCD7715F1EC5A12E00993F15 /* AreaTableViewCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaTableViewCellTests.swift; sourceTree = "<group>"; };
+		BCD771611EC5A40200993F15 /* RestTableViewCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestTableViewCellTests.swift; sourceTree = "<group>"; };
+		BCD7716A1EC5AD9100993F15 /* MocRestList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MocRestList.swift; sourceTree = "<group>"; };
+		BCD7716C1EC5AE4000993F15 /* rest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rest.json; sourceTree = "<group>"; };
 		BCE16FBD1E83655800F5EC07 /* Env.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Env.swift; sourceTree = "<group>"; };
 		BCF2241B1E7B9D9A003C6C1B /* ios-gurunavi-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-gurunavi-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF2241E1E7B9D9A003C6C1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +145,8 @@
 			children = (
 				BC52133F1EAB1D390084C283 /* SpyAreaFilterLoadable.swift */,
 				BCBE77E31E7CBF7A008C39AA /* SpyRestSearchAPILoadable.swift */,
+				BCD7716A1EC5AD9100993F15 /* MocRestList.swift */,
+				BCD7716C1EC5AE4000993F15 /* rest.json */,
 			);
 			path = Moc;
 			sourceTree = "<group>";
@@ -146,7 +156,16 @@
 			children = (
 				BCD7715C1EC5994500993F15 /* RouterTests.swift */,
 			);
-			name = Utils;
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BCD7715E1EC5A11100993F15 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BCD7715F1EC5A12E00993F15 /* AreaTableViewCellTests.swift */,
+				BCD771611EC5A40200993F15 /* RestTableViewCellTests.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		BCF224121E7B9D9A003C6C1B = {
@@ -187,10 +206,11 @@
 		BCF224321E7B9D9B003C6C1B /* ios-gurunavi-demoTests */ = {
 			isa = PBXGroup;
 			children = (
-				BCF224351E7B9D9B003C6C1B /* Info.plist */,
 				BCBE77E21E7CBF5C008C39AA /* Moc */,
 				BCF224701E7CAD63003C6C1B /* Models */,
 				BCD7715B1EC5993000993F15 /* Utils */,
+				BCD7715E1EC5A11100993F15 /* Views */,
+				BCF224351E7B9D9B003C6C1B /* Info.plist */,
 			);
 			path = "ios-gurunavi-demoTests";
 			sourceTree = "<group>";
@@ -413,6 +433,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCD7716D1EC5AE4000993F15 /* rest.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,10 +575,13 @@
 			files = (
 				BCBE77E61E7CBFEA008C39AA /* RestSearchAPITests.swift in Sources */,
 				BC5213401EAB1D390084C283 /* SpyAreaFilterLoadable.swift in Sources */,
+				BCD771601EC5A12E00993F15 /* AreaTableViewCellTests.swift in Sources */,
 				BCF224721E7CAD8E003C6C1B /* RestPageManagerTests.swift in Sources */,
 				BCBE77E41E7CBF7A008C39AA /* SpyRestSearchAPILoadable.swift in Sources */,
 				BCBE77E11E7CBD4B008C39AA /* RestSearchParamsBuilderTests.swift in Sources */,
 				BCD7715D1EC5994500993F15 /* RouterTests.swift in Sources */,
+				BCD7716B1EC5AD9100993F15 /* MocRestList.swift in Sources */,
+				BCD771621EC5A40200993F15 /* RestTableViewCellTests.swift in Sources */,
 				BCBE77E81E7CC42C008C39AA /* AreaFilterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
